@@ -1,6 +1,8 @@
 name = "openclaw"
-main = "src/index.ts" # 如果你的源码入口是 index.js，请改为 src/index.js
+main = "src/index.ts" # 如果报错持续，尝试改为 "index.ts"
 compatibility_date = "2024-05-03"
+compatibility_flags = [ "nodejs_compat" ] # OpenClaw 依赖 Node.js 环境，必须加上这一行
+
 
 # 这里的变量可以根据 OpenClaw 的需求增减
 [vars]
